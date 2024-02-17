@@ -6,6 +6,9 @@ This repository is a basic boilerplate for getting started with Angular in alt:V
 ## Getting started
 Clone the repository and use `npm install`, after installing the packages use:
 
+> [!CAUTION]
+> If you do not have the [Angular CLI](https://angular.dev/tools/cli/setup-local) installed, install it before advancing further.
+
 - `ng serve` for development mode, it's going to watch the files and build the application upon changes. You can create the alt:V browser on the generated address.
 - `ng build` to build the angular project.
 
