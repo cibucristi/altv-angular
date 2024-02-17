@@ -1,7 +1,6 @@
 # alt:V Angular
 This repository is a basic boilerplate for getting started with Angular in alt:V Multiplayer. It contains several helpful features and was generated with the Angular CLI. The project was setup using SCSS as stylesheet format, it is for both browser and in-game based development workflow.
 
-// image here
 ![altV Angular](https://i.imgur.com/wB1ha8I.png "altV Angular")
 
 ## Getting started
@@ -35,3 +34,6 @@ alt.onServer("initializeBrowser", () => {
 ```
 
 2. You're all done! If you did everything mentioned up correctly, you should have an alt:V + Angular project running with no problems.
+
+# Sponsor 💘
+If you want to support me, just give me a [Coffee🍵☕](https://www.buymeacoffee.com/cibucristi)
