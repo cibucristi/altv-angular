@@ -1,5 +1,26 @@
+<ng-container>
+    @if (!isAlt) {
+        <div class="dev-menu" (mouseenter)="toggleDevMenu(true)" (mouseleave)="toggleDevMenu(false)">
+            @if (devMode) {
+                <div class="dev-menu-frame">
+                    @for (component_name of getAllComponentNames(); track $index) {
+                        <ng-container>
+                            <span class="dev-menu-content" (click)="onComponentSelected(component_name)">
+                                {{ component_name }}
+                            </span>
+                        </ng-container>
+                    }
 
+                </div>
+            }
+        </div>
+    }
+
+    @for (component of components; track $index) {
+        <view-component [component]="component.identifier"></view-component>
+    }
+</ng-container>
 
 @if (!isAlt) {
-  <div class="w-full h-[100vh] fullscreen-background"></div>
+    <div class="w-full h-[100vh] fullscreen-background"></div>
 }

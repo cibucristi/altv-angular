@@ -1,11 +1,95 @@
+@import url("https://fonts.cdnfonts.com/css/made-outer-sans-alt");
+
+.dev-menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  height: 100vh;
+  width: 5px;
+  color: transparent;
+  text-decoration: none;
+  background-color: #2c3e5099;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.dev-menu:hover {
+  width: 300px;
+}
+
+.dev-menu:hover .dev-menu-content:hover {
+  cursor: pointer;
+  background-color: #34495e99;
+}
+
+.dev-menu-frame {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 100px);
+  overflow-y: scroll;
+}
+
+.dev-menu-frame::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dev-menu-frame::-webkit-scrollbar-track {
+  background-color: #34495e;
+}
+
+.dev-menu-frame::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #4b6584;
+}
+
+.dev-menu-content {
+  padding: 0.5rem;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.dev-menu-event {
+  position: absolute;
+  bottom: 0.25rem;
+  left: 0;
+  padding: 0.25rem;
+}
+
+.dev-menu-event input,
+.dev-menu-event button {
+  width: calc(100% - 10px);
+  margin-bottom: 5px;
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #4b6584;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dev-menu-event button:hover {
+  background-color: #778ca3;
+}
+
+.dev-menu-event button:active {
+  background-color: #5c7c8a;
+}
+
 .fullscreen-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('/assets/images/gta.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/images/gta.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>AltvAngular</title>
+  <title>altv-angular</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -11,25 +11,34 @@
   <app-root></app-root>
 
   <script>
+
+    /**
+     * ALT:V Simulator.
+     * Helps with DX.
+    */
     if ('alt' in window) {
       window.isAlt = true;
+
+      /**
+       * This is mandatory! Do not delete!
+       * This is a connection bridge between UI and server-side, without this sendServer wouldn't work.
+      **/
       alt.emitServer = (eventName, ...args) => {
-        console.log('[ALTV - Emit Server] web view: ' + eventName)
         alt.emit('SEND_TO_SERVER', eventName, ...args);
       }
     } else {
       window.isAlt = false;
       window.alt = {
         emitServer(eventName, ...args) {
-          console.log('web view: ' + eventName)
+          console.log('[SIMULATOR]: emitServer: ' + eventName)
         },
         emit(eventName, ...args) {
-          console.log('web view: ' + eventName)
+          console.log('[SIMULATOR]: emit: ' + eventName)
         },
         on() { },
         off() { },
       }
-      console.log('[ALT.V]: Simulating altV environment...')
+      console.log('[ALT:V]: Simulating alt:V environment...')
     }
   </script>
 </body>
