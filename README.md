@@ -1,5 +1,7 @@
 # alt:V Angular
-This repository is a basic boilerplate for getting started with Angular in alt:V Multiplayer. It contains several helpful features and was generated with the Angular CLI. The project was setup using SCSS as stylesheet format, it is for both browser and in-game based development workflow.
+This repository is a basic boilerplate for getting started with Angular in alt:V Multiplayer. It contains several helpful features and was generated with the Angular CLI. The project was setup using SCSS as stylesheet format, it is for both browser and in-game based development workflow. 
+
+If you are stuck somewhere and don't know how to resolve, [here](https://github.com/cibucristi/altv-angular-server) is a workaround ready that contains alt:V server files.
 
 ![altV Angular](https://i.imgur.com/wB1ha8I.png "altV Angular")
 
